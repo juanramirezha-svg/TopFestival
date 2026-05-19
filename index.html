@@ -17,7 +17,12 @@
         <P>TOP FESTIVAL</P>
         </div>
 
-        <nav>
+          <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+
+        <nav id="menu">
             <ul>
             <li><a href="#artistas">Artistas principales</a></li>
             <li><a href="artistas.html">Más artistas</a></li>
@@ -124,6 +129,15 @@
     </div>
 
      </footer>
+
+     <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
