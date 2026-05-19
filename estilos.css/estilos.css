@@ -1,0 +1,380 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:white;
+}
+
+.franja{
+    background-color: black;
+    height: 20px;   
+}
+
+
+header{
+    background-color:#39a9f0;
+}
+
+.logo{
+    text-align: center;
+    padding: 12px 0;
+}
+
+.logo h1{
+    font-size: 90px;
+    color:black;
+    font-weight: 900;
+    line-height: 0.9;
+  
+}
+
+.logo p{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+nav{
+    background-color: black;
+    padding: 15px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #39a9f0
+
+}
+
+.banner{
+    background-color: #39a9f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 90px;
+
+}
+
+.texto-banner{
+    width: 60%;
+}
+
+.texto-banner h2{
+    font-size: 68px;
+    line-height: 1.25;
+    color: black;
+    font-weight: 900;
+    
+    
+}
+
+.info-banner{
+
+     width: 35%;
+    text-align: center;
+   
+}
+
+
+.info-banner h3{
+    color:white;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.ubicacion{
+    color: white;
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.boton{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px 45px; 
+    border-radius: 45px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.boton:hover{
+    background-color: white;
+    color: black;
+}
+
+.artistas{
+    padding: 50px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.artistas h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+
+}
+
+.container-artistas{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:nowrap;
+}
+
+.card{
+   
+    width:180px;
+    text-align: center;
+
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:22px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card img{
+    width: 100%;
+    height: 280px;
+   
+}
+
+.card button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none; 
+    background-color: #39a9f0;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: black ;
+}
+
+footer{
+    background-color: #39a9f0;
+    padding: 18px 0;
+    
+    
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 70px;
+    
+}
+
+.x,
+.facebook,
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.redes img{
+    width: 28px;
+    height: 28px;
+
+}
+
+.redes p{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+@media (max-width:1024px){
+
+    .franja{
+        height: 18px;
+    }
+
+    .logo h1{
+        font-size: 75px;
+    }
+
+    .logo p{
+        font-size: 30px;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    nav a{
+        font-size: 18px;
+    }
+
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .texto-banner{
+        width: 100%;
+    }
+
+    .texto-banner h2{
+        font-size: 50px;
+    }
+
+    .info-banner{
+        width: 100%;
+    }
+
+    .info-banner h3{
+        font-size: 45px;
+    }
+
+    .ubicacion{
+        font-size: 32px;
+    }
+
+    .boton{
+        font-size: 22px;
+        padding: 18px 40px;
+    }
+
+    .container-artistas{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card{
+        width: 220px;
+    }
+
+    .artistas h2{
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width:768px){
+
+.franja{
+    height: 15px;
+}
+
+.logo h1{
+    font-size: 60px;
+}
+
+.logo p{
+    font-size: 25px;
+}
+
+nav ul{
+    font-size: 18px;
+    gap: 15px;
+}
+
+nav a{
+    font: size 18px;
+}
+
+.banner{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px
+}
+
+.texto-banner{
+   width: 100%;
+}
+
+.texto-banner h2{
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.info-banner{
+    width: 100%;
+}
+
+.info-banner h3{
+    font-size: 32px;
+}
+
+.ubicacion{
+    font-size: 24px;
+}
+
+.boton{
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.artistas{
+    padding:40px 20px;
+}
+
+.artistas h2{
+    font-size: 32px;
+}
+
+.container-artistas{
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.card{
+    width: 80%;
+}
+
+.card img{
+    height: 350px;
+}
+
+.redes{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes p{
+    font-size: 18px;
+}
+}
